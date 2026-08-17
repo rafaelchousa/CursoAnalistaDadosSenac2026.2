@@ -1,0 +1,1 @@
+# CursoAnalistaDadosSenac2026.2
