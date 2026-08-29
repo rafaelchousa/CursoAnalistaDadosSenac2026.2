@@ -1,23 +1,25 @@
-def calculadora_v1(num1,num2,operador):
-num1=float(input("Digite seu primeiro número:"))
-num2=float(input("Digit seu segundo número:"))
+import time
 
-operador=input("Informe a operação desejada entre:1. adição; 2. subtração; 3. multiplicação; 4. divisão")
+# 1. DEFINIÇÃO da função
+def dar_boas_vindas():
+    print("-"*40)
+    print("  Bem-vindo ao nosso aplicativo! 😀")
+    print("-"*40)
 
-match operador:
-    case "1":
-        print(f"Resultado da soma:(num1+num2).")
-    case "2":
-        print(f"Resultado da subtração:(num1-num2).")
-    case "3":
-        print(f"Resultado da multiplicação:(num1*num2).")
-    case "4":
-        if num2!=0
-                resultado=
-        print(f"Resultado da divisão:(num1/num2).")
-        else
-        print("Dividiu por Zero,Errou feio,Errou rude!")
-    case _ :
-        print("Informe um número de operadpr válido.")
+# 2. CHAMADA da função
+# O código abaixo só será executado se você "chamar" a função pelo nome:
 
-    calculinho = calculadora_v1(333,555,"1")
+print("Início do programa.")
+print('Por favor, aguarde...')
+time.sleep(2)  # Simula uma pausa
+dar_boas_vindas()  # <-- Isso executa o código dentro da função
+print("Meio do programa.")
+dar_boas_vindas()  # <-- Podemos chamar de novo!
+print("Fim do programa.")
+# 'nome_da_pessoa' é um PARÂMETRO.
+# É uma variável que só existe dentro da função.
+def boas_vindas_personalizado(nome_da_pessoa):
+    print("-"*40)
+    print(f"Olá, {nome_da_pessoa}! Seja bem-vindo(a)! 😀")
+    print("-"*40)
+
